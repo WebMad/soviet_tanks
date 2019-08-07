@@ -33,8 +33,9 @@ header {
 }
 
 .container {
-    width: 900px;
+    width: 1080px;
     margin: auto;
+
 }
 
 header .container {
@@ -133,4 +134,64 @@ header .main {
     align-items: center;
     flex-direction: column;
     flex-grow: 1;
+}
+
+.about {
+    padding: 20px 0;
+}
+
+.about h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+}
+.people .people-img {
+    align-self: center;
+    min-height: 220px;
+}
+.people .people-img img{
+    max-width: 200px;
+    border-radius: 50%;
+}
+
+.people {
+    padding: 20px;
+    box-shadow: 0 0 5px #b5b5b5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 300px;
+}
+
+.people .people-name {
+    font-size: 24px;
+}
+
+.people .contacts {
+    margin-top: 20px;
+}
+.people .contact {
+
+    display: flex;
+    align-items: center;
+}
+.people .contact span{
+    margin-left: 10px;
+}
+.people .contact img{
+    width: 27px;
+    height: 27px;
+}
+.people .comment {
+    margin-top: 10px;
+}
+
+.gradient-header {
+    height: 100px;
+    margin-top: -100px;
+    background: linear-gradient(0deg, rgb(255,255,255), rgba(0,0,0,0));
 }
