@@ -1,0 +1,136 @@
+@font-face {
+    font-family: Exo2; /* Имя шрифта */
+    src: url('../fonts/Exo2/Exo2-Medium.otf'); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: Gilroy-ExtraBold; /* Имя шрифта */
+    src: url('../fonts/Gilroy/Gilroy-ExtraBold.otf'); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: Gilroy-light; /* Имя шрифта */
+    src: url('../fonts/Gilroy/Gilroy-Light.otf'); /* Путь к файлу со шрифтом */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Gilroy-light, serif;
+}
+
+body {
+
+}
+
+header {
+    min-height: 600px;
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(../images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    color:rgb(255,255,255);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 900px;
+    margin: auto;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.head {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo .logo-text {
+    margin-left: 10px;
+}
+
+.logo .logo-text h2 {
+    font-size: 36px;
+}
+
+.logo .logo-text span {
+    letter-spacing: 7px;
+}
+
+.logo img {
+     width: 65px;
+     height: 65px;
+}
+
+ul.menu {
+    display: flex;
+    list-style-type: none;
+}
+
+ul.menu li.menu-element {
+    font-size: 15px;
+    margin-left: 40px;
+    text-transform: uppercase;
+}
+
+ul.menu li.menu-element a{
+    color: white;
+    text-decoration: none;
+    font-family: Exo2;
+}
+ul.menu li.menu-element a:after{
+    content: "";
+    background: #fff;
+    height: 2px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -23px;
+    width: 100%;
+    transform: rotateY(90deg);
+    transition: 0.2s transform;
+}
+
+ul.menu li.menu-element:hover a:after{
+    transform: rotateY(0deg);
+}
+
+header .main .main-header{
+    font-size: 75px;
+
+}
+header .main .main-subheader{
+    font-size: 24px;
+    letter-spacing: 5px;
+}
+header .main a.start-button{
+    margin-top: 30px;
+    border: 2px solid rgb(255,255,255);
+    border-radius: 3px;
+    padding: 5px 25px;
+    font-size: 24px;
+    color: rgb(255,255,255);
+    text-decoration: none;
+    transition: 0.3s;
+}
+header .main a.start-button:hover{
+    color: rgb(65, 65, 65);
+    background: rgb(255,255,255);
+}
+
+header .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 1;
+}
