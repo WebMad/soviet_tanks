@@ -137,7 +137,7 @@ header .main {
 }
 
 .about {
-    padding: 20px 0;
+    padding: 40px 0;
 }
 
 .about h1 {
@@ -194,4 +194,34 @@ header .main {
     height: 100px;
     margin-top: -100px;
     background: linear-gradient(0deg, rgb(255,255,255), rgba(0,0,0,0));
+}
+
+.history {
+    padding: 40px 0;
+}
+
+.history .container {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.history h1 {
+    text-align: center;
+}
+
+
+.history .container p{
+    text-align: justify;
+}
+
+.history .container .group-image {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+    align-items: center;
+}
+.history .container .group-image img {
+    width: 48%;
+    flex-basis: 40%;
+
 }

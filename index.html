@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/colorbox/colorbox.css">
 </head>
 <body>
     <header>
@@ -93,10 +94,91 @@
                     </div>
                 </div>
             </div>
-            <div class="history">
-                История либо комментарий одного из разработчиков, основные проекты
+        </div>
+        <div class="history">
+            <h1>История</h1>
+            <div class="container">
+                <p>В конце 2012 года в Танках Онлайн было произведено обновление под номером 114 - ребаланс. Обновление было связано с полным рестайлингом игры, изменением физики. Тогда старые корпуса, пушки мы могли наблюдать только на страницах Wiki Tanki Online. (<a
+                        href="https://ru.tankiwiki.com/%D0%A0%D0%B5%D0%B1%D0%B0%D0%BB%D0%B0%D0%BD%D1%81" target="_blank">https://ru.tankiwiki.com/Ребаланс</a>)</p>
+                <div class="group-image rebalance">
+                    <img href="./images/rebalance.png" src="./images/rebalance.png" alt="">
+                    <img href="./images/rebalance_2.jpg" src="./images/rebalance_2.jpg" alt="">
+                </div>
+                <p>Тогда игрок под ником Mishin870 решил разработать свою версию игры и выпустил тестовую версию, где находились клиент и сервер. Эта версия имела существенные недостатки, такие как: пропадания танков, отсутствие второй линейки вооружения, отсутствие поддержки GPU. После этой версии Mishin870 больше не выпускал обновления.</p>
+                <div class="group-image mishin">
+                    <img href="./images/mishin870.jpg" src="./images/mishin870.jpg" alt="">
+                    <img href="./images/mishin870_2.jpg" src="./images/mishin870_2.jpg" alt="">
+                </div>
+                <p>Позже появились множество энтузиастов, которые создавали свои проекты и пытались всеми возможными способами модифицировать игру. По-началу ничего не получалось, не хватало опыта, не было исходников клиента и сервера. Со временем исходники были получены путем декомпиляции и появилось пространство для разработки. Была добавлена вторая линейка вооружения, поддержка GPU, пропадания танков исправлены, добавлены звуки. В большей степени это заслуга таких проектов как: OldTanksTM, GTanks, Legend Tanks, Force Of Tin.</p>
+                <p>Последние разработали Unity версию игры, работа была проведена большая, но ни к чему не привела, исходники были утеряны.</p>
+                <div class="group-image force">
+                    <img href="./images/force.jpg" src="./images/force.jpg" alt="">
+                    <img href="./images/force_2.jpg" src="./images/force_2.jpg" alt="">
+                </div>
+                <p>OldTanksTM разрабатывали старую версию игры, они, в свою очередь, первыми реализовали выстрелы для второй линейки, чем воспользовались другие проекты, именно они продемонстрировали возможность использования ресурсов GPU. (<a
+                        href="https://www.youtube.com/watch?v=gJQdPatx6n0" target="_blank">https://www.youtube.com/watch?v=gJQdPatx6n0</a>)</p>
+                <div class="group-image tankstm">
+                    <img href="./images/tankstm.jpg" src="./images/tankstm.jpg" alt="">
+                    <img href="./images/tankstm_2.jpg" src="./images/tankstm_2.jpg" alt="">
+                </div>
+                <p>GTanks, основываясь на достижениях OldTanksTM, успешно запустили старую версию игры, анимировали движение гусениц на танке, добавили в игру режим CTF, но последнее время перестали выпускать обновления, интерес к проекту пропал.</p>
+                <div class="group-image gtanks">
+                    <img href="./images/gtanks.jpg" src="./images/gtanks.jpg" alt="">
+                    <img href="./images/gtanks_2.png" src="./images/gtanks_2.png" alt="">
+                </div>
+                <p>Legend Tanks разработали версию игры 2014 года на основе исходников GTanks, была введена новая физика, изменены текстуры, добавлена возможность смены вооружения во время боя. Первый запуск прошел неудачно, был неприятный баг с черными текстурами на некоторых компьютерах, вылетали критические ошибки. Поэтому Legend Tanks решили заняться переходом на 8-ую версию движка, на этом они и остановились, именно поэтому вы находитесь на этом сайте.</p>
+                <div class="group-image letanks">
+                    <img href="./images/letanks.jpg" src="./images/letanks.jpg" alt="">
+                    <img href="./images/letanks_2.jpg" src="./images/letanks_2.jpg" alt="">
+                </div>
             </div>
         </div>
     </main>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.colorbox-min.js"></script>
+    <script>
+        $('.group-image.rebalance>img').colorbox({
+            rel: 'rebalance',
+            width: '75%',
+            height:"75%",
+        });
+
+        $('.group-image.mishin>img').colorbox({
+            rel: 'mishin',
+            width: '75%',
+            height:"75%",
+        });
+
+        $('.group-image.force>img').colorbox({
+            rel: 'mishin',
+            width: '75%',
+            height:"75%",
+        });
+
+        $('.group-image.mishin>img').colorbox({
+            rel: 'mishin',
+            width: '75%',
+            height:"75%",
+        });
+
+        $('.group-image.tankstm>img').colorbox({
+            rel: 'tankstm',
+            width: '75%',
+            height:"75%",
+        });
+
+        $('.group-image.gtanks>img').colorbox({
+            rel: 'gtanks',
+            width: '75%',
+            height:"75%",
+        });
+
+        $('.group-image.letanks>img').colorbox({
+            rel: 'letanks',
+            width: '75%',
+            height:"75%",
+        });
+    </script>
 </body>
 </html>
